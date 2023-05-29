@@ -75,7 +75,8 @@ CLASS ZCL_MLT001_HTTP_SYSINFO IMPLEMENTATION.
 
     CALL METHOD mo_srv->response->set_header_field(
         name  = 'Content-Type'                          "#EC NOTEXT
-        value = 'application/json; charset=utf-8' ).
+"        value = 'application/json; charset=utf-8' ).
+        value = 'application/json' ).
 
     CALL METHOD mo_srv->response->set_cdata
       EXPORTING

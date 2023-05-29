@@ -67,10 +67,12 @@ CLASS ZCL_MLT001_HTTP_HANDLER IMPLEMENTATION.
     mt_builtin_proc = VALUE #(
     ( sel_id = 'GET_' processor = 'ZCL_MLT001_HTTP_INDEX' )
 
-    ( sel_id = 'GET_sysinfo' processor = 'ZCL_MLT001_HTTP_SYSINFO' )
+
+    " http://[:server]:[:port]/sap/nwincall/sysinfo?sap-client=[:mandt]
+    ( sel_id = 'GET_/sysinfo' processor = 'ZCL_MLT001_HTTP_SYSINFO' )
 
     ( sel_id = 'POST_' processor = 'ZCL_MLT001_HTTP_INDEX' )
-    ( sel_id = 'POST_asy2nw' processor = 'ZCL_MLT001_HTTP_APOST_MSG' )
+    ( sel_id = 'POST_/asy2nw' processor = 'ZCL_MLT001_HTTP_APOST_MSG' )
     ).
 
 
