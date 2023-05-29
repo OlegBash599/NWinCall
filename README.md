@@ -10,3 +10,8 @@ NetWeaver (ABAP) BYOL-http-service
 ## Features
 1. Posting Message to Cluster Data Table and Starting in async mode processing
 2. 
+
+## Customization
+1. Table **ZTMLT001_HNDL** is for adding extra handlers. The key is HTTP-method and url.
+2. Table **ZTMLT001_MSGPARS** is for adding additional parser for apost message processing.
+3. 
