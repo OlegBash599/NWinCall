@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>NWinCall QUEUE</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFG_MLT001_QUEUETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFG_MLT001_QUEUE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_MLT001_EVENT_PROC</FUNCNAME>
+     <SHORT_TEXT>Event(s) Processing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_EVENT_GUID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR32</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_EVENT_GUID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character field, length 32</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_MLT001_MSG_PARSE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Msg Parsing</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_MSG_GUID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR32</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_MSG_TYPEID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TEXT40</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_MSG_GUID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character field, length 32</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_MSG_TYPEID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text, 40 Characters Long</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
