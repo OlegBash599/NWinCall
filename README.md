@@ -14,4 +14,4 @@ NetWeaver (ABAP) BYOL-http-service
 ## Customization
 1. Table **ZTMLT001_HNDL** is for adding extra handlers. The key is HTTP-method and url.
 2. Table **ZTMLT001_MSGPARS** is for adding additional parser for apost message processing.
-3. 
+3. Table **ZTMLT001_EVENTS** is for adding event processor. Usually message parsing could generate some event.
