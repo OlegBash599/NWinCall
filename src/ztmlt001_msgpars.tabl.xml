@@ -9,7 +9,7 @@
     <CLIDEP>X</CLIDEP>
     <DDTEXT>NWinMSG parsers</DDTEXT>
     <MAINFLAG>X</MAINFLAG>
-    <CONTFLAG>A</CONTFLAG>
+    <CONTFLAG>C</CONTFLAG>
     <EXCLASS>1</EXCLASS>
    </DD02V>
    <DD09L>
@@ -71,6 +71,12 @@
      <COMPTYPE>E</COMPTYPE>
     </DD03P>
    </DD03P_TABLE>
+   <TABL_EXTRAS>
+    <TDDAT>
+     <TABNAME>ZTMLT001_MSGPARS</TABNAME>
+     <CCLASS>&amp;NC&amp;</CCLASS>
+    </TDDAT>
+   </TABL_EXTRAS>
   </asx:values>
  </asx:abap>
 </abapGit>
